@@ -4,7 +4,7 @@
 
 ## Flowchart
 
-:::mermaid
+```mermaid
 flowchart TD
 
 %%color
@@ -42,7 +42,7 @@ classDef endcolor fill: #4682B4, stroke:#000, stroke-width: 1px
 	M ---> N[Notify user: Borrowing successful]:::notify
 	N ---> HE(End: Borrow Complete):::endcolor
 	
-:::
+```
 
 ## Sequence Diagram 
 > **Note:** I include three diagrams here just to show my working process from an initial and simple sequence diagram to a complex and comprehensive sequence diagram.
