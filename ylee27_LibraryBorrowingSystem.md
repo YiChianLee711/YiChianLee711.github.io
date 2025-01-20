@@ -64,7 +64,7 @@ classDef endcolor fill: #4682B4, stroke:#000, stroke-width: 1px
 
     5. The library system update the borrowing history.
 
-:::mermaid
+```mermaid
 
 sequenceDiagram
 	actor User as User
@@ -83,7 +83,7 @@ sequenceDiagram
 	DB -->> Library: Confirm update
 	Library -->> User: Borrowing successful
 
-:::
+```
 
 * Explanation:
     1. **User**: Interaction with the library system
@@ -104,7 +104,7 @@ sequenceDiagram
     3. **The borrowing quantity of books reaches limit**: when a user reaches his books limit, the system will return "Borrowing limit reached".
 
 
-:::mermaid
+```mermaid
 sequenceDiagram
 	actor User as User
 	participant Library as Library System
@@ -145,7 +145,7 @@ sequenceDiagram
 		end
 	end
 
-:::
+```
 
 ***
 ### III. **Final Version**: Adding 2 more participants to make the diagram more comprehensive.
@@ -155,7 +155,7 @@ sequenceDiagram
 
     2. **Notification System**: The notification system is responsible for sending notifications to users when a book is successfully borrowed or when an error occurs.
 
-:::mermaid
+```mermaid
 
 sequenceDiagram
     actor User as User
@@ -211,4 +211,4 @@ sequenceDiagram
         end
     end
 
-:::
+```
