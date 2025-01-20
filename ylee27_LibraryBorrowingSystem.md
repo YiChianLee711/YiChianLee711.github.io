@@ -3,6 +3,25 @@
 > For the Lesson 2 Lab Assignment for the Mermaid Diagrams, I chose the Choose Your Own Adventure scenario. I originally wanted to do the sequence diagram, but I need a flowchart to help me make the sequence diagram easier, so I'm including a simple flowchart here as well.
 
 ## Flowchart
+### Library Borrowing System Process Description
+The library borrowing system facilitates the process of searching for and borrowing books in a structured and user-friendly manner. Below is an overview of the workflow:
+
+1. Start Search:
+	* The user initiates the process by searching for a specific book through the library system.
+2. Book Availability Check:
+	* The system queries the database to determine if the book exists.
+	* If the book is not found, the user is notified with an error message, and they are prompted to restart the search process.
+3. Borrowing Eligibility:
+	* If the book exists, the system checks whether it is currently available for borrowing.
+	* If the book is unavailable (e.g., already borrowed), the user receives a notification indicating its unavailability.
+4. Borrowing Limit Check:
+	* If the book is available, the system verifies if the user has reached their borrowing limit.
+	* If the limit is reached, the user is notified, and the process ends without completing the borrowing request.
+5. Successful Borrowing:
+	* If the user has not reached their borrowing limit, the system updates the loan record in the database to mark the book as borrowed.
+	* The user is then notified of the successful borrowing transaction.
+6. End Process:
+	* The process concludes, either with a successful borrowing or with appropriate notifications in case of errors or restrictions.
 
 ```mermaid
 flowchart TD
